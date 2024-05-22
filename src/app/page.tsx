@@ -1,3 +1,11 @@
+import "../styles/text.css";
+import { Nixie_One } from "next/font/google";
+
+const nixie_one = Nixie_One({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ["400"]
+});
 
 export default async function Home() {
 
@@ -11,8 +19,8 @@ export default async function Home() {
               alt="Al Siam Profile"
               className="shadow-dark"
             />
-            <h1>Your Name</h1>
-            <p>Your expertise</p>
+            <h1>Nicholas Dimidik</h1>
+            <p>The <b className="full-text text-">FULL</b> Stack Developer</p>
             <div className="social-links">
               <a href="https://twitter.com/" target="_blank">
                 <i className="fa fa-twitter" />

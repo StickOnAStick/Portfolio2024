@@ -162,6 +162,25 @@ select {
   border: none;
   cursor: pointer;
 }
+
+
+.btn-disabled {
+  -webkit-transform: none;
+  transform: none;
+  transition: none;
+  -webkit-transition: none;
+  opacity: 0.6; 
+  pointer-events: none;
+}
+
+.btn-disabled:hover{
+  -webkit-transform: none;
+  transform: none;
+  transition: none;
+  -webkit-transition: none;
+  pointer-events: none;
+}
+
 .btn:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -239,7 +258,7 @@ select {
 .aside .aside-inner {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1.5rem;
   width: 100%;
   height: 100%;
   padding: 30px;
@@ -277,14 +296,14 @@ select {
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
-  border: 1px solid #d4d4e3;
+  border: 1px solid #bdbdbd00;
   cursor: pointer;
   position: fixed;
   left: 300px;
   top: 20px;
   z-index: 11;
   border-radius: 5px;
-  background-color: #fdf9ff;
+  background-color: #bdbdbd14;
   /* display: -ms-flexbox;
     display: flex; */
   display: none;

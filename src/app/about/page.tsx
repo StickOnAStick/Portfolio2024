@@ -15,7 +15,7 @@ const About: NextPage = () => {
               <div className="row">
                 <div className="about-text padd-15">
                   <h2>
-                    I am Your name a <span>Your Expertise</span>
+                    Nicholas Dimidik <span>Computer Engineer</span>
                   </h2>
                   <p>
                     Hi! My name is Your Name. I am a your expertise, and I am
@@ -32,32 +32,32 @@ const About: NextPage = () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>www.urfolio.vercel.app</span>
+                        Linkedin : <span><a href="https://www.linkedin.com/in/nicholas-dimidik-71b20b159/">Linkedin</a></span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Email : <span>your@email.com</span>
+                        Email : <span>NWdimidik@gmail.com</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Degree : <span>SSC</span>
+                        Degree : <span>CMPE</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Phone : <span>+99 ********</span>
+                        Phone : <span>+1 408-607-7473</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        City : <span>Your City</span>
+                        City : <span>San Jose, CA</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Freelance : <span>Available</span>
+                        Freelance : <span>Not Available</span>
                       </p>
                     </div>
                   </div>
@@ -73,7 +73,9 @@ const About: NextPage = () => {
                       <a
                         href="#contact"
                         data-section-index={0}
-                        className="btn hire-me"
+                        className="btn btn-disabled hire-me"
+                        aria-disabled={true}
+                        style={{cursor: "default"}}
                       >
                         Hire Me
                       </a>
@@ -83,31 +85,31 @@ const About: NextPage = () => {
                 <div className="skills padd-15">
                   <div className="row">
                     <div className="skill-item padd-15">
-                      <h5>Html5</h5>
+                      <h5>Full-Stack</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "80%" }} />
                         <div className="skill-percent">80%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>Css3</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{ width: "60%" }} />
-                        <div className="skill-percent">60%</div>
-                      </div>
-                    </div>
-                    <div className="skill-item padd-15">
-                      <h5>Javascript</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{ width: "50%" }} />
-                        <div className="skill-percent">50%</div>
-                      </div>
-                    </div>
-                    <div className="skill-item padd-15">
-                      <h5>Bootstrap</h5>
+                      <h5>Hardware Design</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "70%" }} />
                         <div className="skill-percent">70%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>System Architechture</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "80%" }} />
+                        <div className="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>Electrical</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "50%" }} />
+                        <div className="skill-percent">50%</div>
                       </div>
                     </div>
                   </div>

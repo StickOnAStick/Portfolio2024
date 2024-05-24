@@ -1,18 +1,29 @@
+"use client"
 import type { NextPage } from "next";
-
+import emailjs from '@emailjs/browser'
+import { useState } from "react";
+import "../../styles/style.css"
 
 const Contact: NextPage = () => {
-
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
   async function sendEmail(formData: FormData){
-    'use server'
-
+    setLoading(true);
+    setError(null);
     const rawFormData = {
-      name: formData.get('name'),
+      name: formData.get("name"),
       email: formData.get('email'),
       subject: formData.get('subject'),
       message: formData.get('message')
     }
-    console.log(rawFormData);
+
+    emailjs.send("service_xodvh1j", "template_n6d02np", rawFormData, "NUo4MTdfZDM6-dfmb")
+    .then( (response) => {
+      setLoading(false);
+    }, (error) => {
+      setLoading(false);
+      setError("Error sending the email.")
+    })
   }
 
   return (
@@ -64,6 +75,7 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Name*"
                       id="name"
+                      name="name"
                       required
                     />
                   </div>
@@ -75,6 +87,7 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Email*"
                       id="email"
+                      name="email"
                       required
                     />
                   </div>
@@ -88,6 +101,7 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Subject*"
                       id="subject"
+                      name="subject"
                       required
                     />
                   </div>
@@ -101,6 +115,7 @@ const Contact: NextPage = () => {
                       placeholder="Your Message*"
                       defaultValue={""}
                       id="message"
+                      name="message"
                       required
                     />
                   </div>
@@ -108,11 +123,12 @@ const Contact: NextPage = () => {
               </div>
               <div className="row">
                 <div className="col-12 padd-15">
-                  <button type="submit" className="btn">
+                  <button type="submit" className={`btn ${loading ? "btn-disabled" : ""}`  } disabled={loading}>
                     Send Message
                   </button>
                 </div>
               </div>
+              <p>{error}</p>
             </form>
           </div>
           {/* Contact Form Ended */}

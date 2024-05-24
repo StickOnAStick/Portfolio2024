@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-
+import emailjs from "@emailjs/browser";
+import { error } from "console";
 
 const Contact: NextPage = () => {
 
@@ -12,7 +13,37 @@ const Contact: NextPage = () => {
       subject: formData.get('subject'),
       message: formData.get('message')
     }
+
     console.log(rawFormData);
+    emailjs.init({
+      publicKey: 'NUo4MTdfZDM6-dfmb',
+      // Do not allow headless browsers
+      blockHeadless: true,
+      blockList: {
+        // Block the suspended emails
+        list: [],
+        // The variable contains the email address
+        watchVariable: 'email',
+      },
+      limitRate: {
+        // Set the limit rate for the application
+        id: 'app',
+        // Allow 1 request per 10s
+        throttle: 10000,
+      },
+    });
+    emailjs.send("service_xodvh1j", "template_n6d02np", rawFormData, "NUo4MTdfZDM6-dfmb",)
+    .then(
+      (response) => {
+        console.log("response", response)
+      }, 
+      (error) => {
+        console.log("error", error)
+      });
+    ;
+ 
+    console.log("The message was sent successfully: ");      
+
   }
 
   return (
@@ -64,6 +95,7 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Name*"
                       id="name"
+                      name="name"
                       required
                     />
                   </div>
@@ -75,6 +107,7 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Email*"
                       id="email"
+                      name="email"
                       required
                     />
                   </div>
@@ -88,6 +121,7 @@ const Contact: NextPage = () => {
                       className="form-control"
                       placeholder="Subject*"
                       id="subject"
+                      name="subject"
                       required
                     />
                   </div>
@@ -101,6 +135,7 @@ const Contact: NextPage = () => {
                       placeholder="Your Message*"
                       defaultValue={""}
                       id="message"
+                      name="message"
                       required
                     />
                   </div>

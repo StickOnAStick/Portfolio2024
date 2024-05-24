@@ -15,14 +15,17 @@ const Portfolio: NextPage = () => {
               <button type="button" className="active" data-filter="all">
                 All
               </button>
-              <button type="button" data-filter="graphics-design">
-                Graphics Design
+              <button type="button" data-filter="websites">
+                Websites & Apps
               </button>
-              <button type="button" data-filter="web-design">
-                Web Design
+              <button type="button" data-filter="hardware">
+                Hardware & Circuits
               </button>
-              <button type="button" data-filter="wordpress">
-                Wordpress
+              <button type="button" data-filter="ai">
+                AI
+              </button>
+              <button type="button" data-filter="ai">
+                
               </button>
             </div>
           </div>

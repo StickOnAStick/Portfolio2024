@@ -169,7 +169,7 @@ select {
   transform: none;
   transition: none;
   -webkit-transition: none;
-  opacity: 0.6; 
+  opacity: 0.2; 
   pointer-events: none;
 }
 

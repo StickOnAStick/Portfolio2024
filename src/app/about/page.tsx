@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import "../../styles/text.css";
 
 const About: NextPage = () => {
   return (
@@ -18,12 +19,11 @@ const About: NextPage = () => {
                     Nicholas Dimidik <span>Computer Engineer</span>
                   </h2>
                   <p>
-                    Hi! My name is Your Name. I am a your expertise, and I am
-                    very passionate and dedicated to my work. With 1 years
-                    experience as a your expertise, I have acquired the skills and
-                    knowledge necessary to make your project a success. I enjoy
-                    every step of the design process, from discussion and
-                    collaboration.
+                    Computer engineer passionate in content creation, hardware design, and artifical intelligence. 
+                    Professionally started as a Full-Stack web developer quickly moving into Silicon Validation and now enjoying creating everything AI. 
+                    Currently working on U-Fi, a personal finance assistant & dashboard with a good friend from Microsoft.
+                    <br/><br/>
+                    Hobbies include working building a  <b className="full-text">FULL</b>-stack AI suite with a custom tensor core FPGA, remote camera system, backend service, hand-built neural net (in rust) and web interface.  
                   </p>
                 </div>
               </div>
@@ -121,19 +121,18 @@ const About: NextPage = () => {
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
+                        
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
+                            <i className="fa fa-calendar" /> 2019 to 2024
                           </h6>
                           <h4 className="timeline-title">
-                            Self Taught (Programming)
+                            Bachelors in Computer Engineering
                           </h4>
                           <p className="timeline-text">
-                            Since 2020 I started to learn Programming. I have
-                            learn Html, Css, Sass, JavaScript, Bootstrap. Now I
-                            am a Professional Web Designer..
+                            From 2019 I began my journey to become a Computer Engineer. Choosing this as I love to tinker with all aspects of a computer from software down to the hardware.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -141,31 +140,26 @@ const About: NextPage = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2019 to Present
+                            <i className="fa fa-calendar" /> 2021
                           </h6>
                           <h4 className="timeline-title">
-                            Diploma in Civil Engineering
+                            John Hopkins Certificate
                           </h4>
                           <p className="timeline-text">
-                            From 2019 I started my journey to be a Civil
-                            Engineer on Shyamoli Ideal Polytechnic Institute. It
-                            still Running to Present.
-                          </p>
+                            Wanting to gain more experience in web development I&apos;d completed an online course for Web Development provided by John Hopkins. This gave me the fundamentals of <b>HTML, CSS, JS</b> which I took with me to learn more abstract frameworks like <b>React, React Native, NextJS, Astro</b>.                          </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2014 to 2019
+                            <i className="fa fa-calendar" /> 2013 to present
                           </h6>
                           <h4 className="timeline-title">
-                            Secondary School Certificate
+                            Self-Taught Programming
                           </h4>
                           <p className="timeline-text">
-                            In 2019 I passed SSC Exam from Science Group with
-                            GPA- 4.56. My school name was Patgram Anath Bondhu
-                            Govt. High School.
+                            Programming since the age of 12 starting with modding games, transitioning to making them and later moving to making the machines to run them, the computer has always been a fundamental part of my life. Read more about this in the experience section.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -178,17 +172,39 @@ const About: NextPage = () => {
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
+                         {/* Timeline Item */}
+                         <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> 2023 to 2024
+                          </h6>
+                          <h4 className="timeline-title">Autopilot Silicon Validation Internship - Tesla</h4>
+                          <p className="timeline-text">
+                            My time at Tesla was spent expanding our HIL infrastructure for testing, gahtering data, and analysis of the Autopilot boards. Using a variety of tools and protocols such as <b>Vite, Ansible, AWS, Redis, CAN, UART</b> and working closely with my mentor and Electrical Engineers I was able create toolchains that <b>increased test time by 50%</b> and <b>reduced analysis time from hours to seconds</b>. 
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                         {/* Timeline Item */}
+                         <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> June to Nov - 2022
+                          </h6>
+                          <h4 className="timeline-title">Mobile Software Engineer - Xircle</h4>
+                          <p className="timeline-text">
+                            Using <b>React Native, AWS, PostHog</b> I created user analytics and messaging system for our student peer connection startup. This was a great foyer into full-stack mobile development and data analytics to drive user engagement. 
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
                             <i className="fa fa-calendar" /> 2019 to Present
                           </h6>
-                          <h4 className="timeline-title">Graphics Design</h4>
+                          <h4 className="timeline-title">Web Development</h4>
                           <p className="timeline-text">
-                            From 2018 I am woking on Graphics Design. The
-                            software I use Photoshop, Illustrator for Graphics
-                            design.
+                            Wanting to create end-user products I shifted my focus on web-development. This allowed me to go throught he start-up craze but also learn value skills such as the OSI model and it&apos;s implimentations. At this time I focused on <b>React</b> development as it took a heirarchical approach to web development. 
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -196,26 +212,16 @@ const About: NextPage = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
+                            <i className="fa fa-calendar" /> 2013 to 2019
                           </h6>
-                          <h4 className="timeline-title">Web Design</h4>
+                          <h4 className="timeline-title">
+                            The Beginning
+                          </h4>
                           <p className="timeline-text">
-                            Since 2020 I started to learn Coding. I have learn
-                            Html, Css, Sass, JavaScript, Bootstrap. Now I am a
-                            Professional Web Designer..
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
-                          </h6>
-                          <h4 className="timeline-title">Wordpress</h4>
-                          <p className="timeline-text">
-                            Since 2020 I started to learn Wordpress. I can
-                            install, Customize, &amp; fix bug on wordpress.{" "}
+                            2013 is when I began programming. Starting with a lua-based language for the game Garry&apos;s Mod, manipulating the world to my 12 year old self&apos;s will.
+                            Later moving into the game development sphere, using Unreal engine to create Arma-like shooter sim&apos;s for VR during the mid 2010&apos; VR craze.
+                            <br/><br/>
+                            The languages covered during this time were extensive but mostly focused around <b>Lua, C, C++, C#</b>
                           </p>
                         </div>
                         {/* Timeline Item end */}

@@ -14,7 +14,7 @@ const About: NextPage = () => {
           <div className="row">
             <div className="about-content padd-15">
               <div className="row">
-                <div className="about-text padd-15">
+                <div className="about-text padd-15 mt-40">
                   <h2>
                     Nicholas Dimidik <span>Computer Engineer</span>
                   </h2>

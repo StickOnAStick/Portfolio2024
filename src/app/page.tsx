@@ -29,7 +29,7 @@ export default async function Home() {
                 <i className="fa fa-facebook" />
               </a>
               <a href="https://github.com/StickOnAStick" target="_blank">
-                <i className="fa fa-github" />
+                <i className="fa fa-github"/>
               </a>
               <a href="https://www.instagram.com/nicholas_dimidik/" target="_blank">
                 <i className="fa fa-instagram" />

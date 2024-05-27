@@ -1,14 +1,17 @@
 import Image from "next/image";
-export default function ImageNText(){
+export interface ImageNTextProps {
+    text: string;
+    second_text?: string;
+    img: string;
+}
+export default function ImageNText(props: ImageNTextProps){
     return (
         <div className="projectImageNText">
-            <div className="projectImageNText-content">
-                The inital concepts of the game were done by hand. asdasdasdasdasd
+            <div className="projectImageNText-content project-p">
+                <p>{props.text}</p>
+                <p>{props.second_text}</p>
             </div>
-            <div className="projectImageNText-wrapper">
-                <Image  src="/imgs/portfolio/aux-battles/DrawingCropped.jpg" height={300} width={300} alt="concepts"/>
-
-            </div>
+            <Image className="projectImageNText-wrapper"  src={props.img} height={300} width={300} alt="concepts"/>
         </div>
     );
 }

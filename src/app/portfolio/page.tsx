@@ -23,7 +23,7 @@ const Portfolio: NextPage = () => {
                 Hardware & Circuits
               </button>
               <button type="button" data-filter="ai">
-                AI
+                Buisness Ventures
               </button>
             </div>
           </div>

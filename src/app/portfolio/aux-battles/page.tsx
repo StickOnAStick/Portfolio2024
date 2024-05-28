@@ -95,7 +95,6 @@ export default function PortfolioAuxBattles(){
                                     <p className="project-p">
                                         Until... I&apos;d discovered that someone cloned my game. After finding and calling them for banter about such as them using the prompt-pack idea but using youtube&apos;s API and giving merit for a cool feature added wherein users could extend the currently playing track.
                                         After our brief chat I&apos;d prospected if they&apos;d like to continue with development after I discovered a loop-hole in the Spotify TOS; however, despite my charm they declinded. Leaving me to decide if I should continue with development, fueled by competitive drive and desire to finish what was started. 
-                                         
                                     </p>
                                 </div>
                             </div>

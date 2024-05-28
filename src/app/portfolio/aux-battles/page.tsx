@@ -71,12 +71,32 @@ export default function PortfolioAuxBattles(){
                                     <Image className="project-image" src="/imgs/logos/socketio.png" width={300} height={300} alt="next JS Logo"/>
                                 </div>
                                 <div className="about-text padd-15" style={{width: '100%'}}>
-                                    <h3 className="text">Providing Shareholder Value</h3>
-                                    <div className="project-p">
-                                        While building the prototype a friend recommended taking my game a SJSU startup competition. 
-                                        Despite initally only creating the game for other&apos;s enjoyment and experience, this was a great opportunity to test the theorize the commercial viability of the game.
-                                        After making it through the first 
-                                    </div>
+                                    <h3 className="text" style={{marginBottom: '15px'}}>Providing Shareholder Value</h3>
+                                    <ImageNText 
+                                    text="While building the prototype a friend recommended taking my game a SJSU startup competition. 
+                                        Despite initally only creating the game for other's enjoyment and experience, this was an opportunity to practice pitching and test the commercial viability of the game."
+                                    second_text="The revenue stream I discovered was to allow users to create and sell their own ''prompt-packs'' via an in-game marketplace. Solving two issues in one stroke, content and revenue generation, I moved forward with this proposal for my pitch."
+                                    right={true}
+                                    img="/imgs/portfolio/aux-battles/spartupCropped.jpg"/>
+                                    <p className="project-p">
+                                        Ultimately making it to the final stage of the competition I&apos;d enjoyed pushing myself to do this despite originally having no intention to. Learning what VC&apos;s expectations are ultimately helped me in presenting future projects such as U-Fi to VC&apos;s and ultimately has .
+                                    </p>
+                                </div>
+                                <div className="about-text padd-15" style={{width: '100%'}}>
+                                    <h3 className="project-header text" style={{marginBottom: '15px'}}><span className="project-subheader">Ban</span> and Conclusion</h3>
+                                    <p className="project-p">
+                                        Releasing the game July 1st, 2023 and quickly advertising through the r/AuxBattlesGame subreddit. Continually posting to an unresponsive community, although uninspiring, did pay it&apos;s dividends with the game ultimately hitting 20k users & 1k recurring within a month.
+                                        With numbers providing motivation I prepared to launch the prompt-pack marketplace update to expand the games content and provide a revenue stream. Spotify had other plans however, formally banning be from using their developer service due to usage in a game on August 6th, a week before the slightly delayed August 15th release date.
+                                    </p>
+                                    <p className="project-p">
+                                        I&apos;d looked into other services even going on meetings with Deezer and getting refferals for Amazon&apos;s new music API service; however, none of these results met the requirements to be allowed in games and not cause me bankruptcy.
+                                        <b>After this, work for the game stopped.</b>
+                                    </p>
+                                    <p className="project-p">
+                                        Until... I&apos;d discovered that someone cloned my game. After finding and calling them for banter about such as them using the prompt-pack idea but using youtube&apos;s API and giving merit for a cool feature added wherein users could extend the currently playing track.
+                                        After our brief chat I&apos;d prospected if they&apos;d like to continue with development after I discovered a loop-hole in the Spotify TOS; however, despite my charm they declinded. Leaving me to decide if I should continue with development, fueled by competitive drive and desire to finish what was started. 
+                                         
+                                    </p>
                                 </div>
                             </div>
                             

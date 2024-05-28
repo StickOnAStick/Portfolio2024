@@ -863,11 +863,18 @@ select {
   -ms-flex: 0 0 100%;
   display: flex;
   flex: 0 0 100%;
-  gap: 15px;
   max-width: 100%;
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
+
+.projectImageNText-Item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media (max-width: 910px) {
   .projectImageNText {
@@ -886,6 +893,12 @@ select {
   .project-image {
     height: 10rem;
     width: auto;
+  }
+  .projectImageNText-Item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

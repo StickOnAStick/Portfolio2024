@@ -14,7 +14,7 @@ export default function ProjectItem(props: ProjectItemProps){
     <Link href={props.proj_link} className="portfolio-item padd-15" data-category={props.category}>
         <div className="portfolio-item-inner shadow-dark">
           <div className="portfolio-img">
-            <img src={props.img} alt={props.img_alt} />
+            <img src={props.img} alt={props.img_alt}/>
           </div>
           <div className="portfolio-info">
             <h4>{props.title}</h4>

@@ -31,12 +31,20 @@ const Portfolio: NextPage = () => {
           <div className="row">
             {/* Portfolio Item */}
             <ProjectItem
-              proj_link="/portfolio/aux-battles"
+              proj_link="/portfolio/proj/aux-battles"
               img="/imgs/portfolio/aux-battles/Logo.png"
               category="web-design"
               title="Aux-Battles"
               img_alt="AuxBattles Logo"
               list={["Ban from Spotify", "Next JS web-app", "Web Sockets"]}
+            />
+            <ProjectItem
+              proj_link="/portfolio/proj/socialstatus"
+              img="/imgs/portfolio/SocialStatus/LogoGPT1-wide.jpg"
+              category="web-design"
+              title="Social Status"
+              img_alt="SocialStatus Logo"
+              list={["IOT network", "Video Streaming", "Image recognition"]}
             />
             {/* Portfolio Item End*/}
             {/* Portfolio Item */}

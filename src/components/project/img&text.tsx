@@ -1,10 +1,11 @@
 import Image from "next/image";
 export interface ImageNTextProps {
-    text: string;
-    second_text?: string;
+    text: string | React.ReactNode;
+    second_text?: string | React.ReactNode;
     img: string;
     right?: boolean; // Left or right, if undefined / false left else right
     darkOrLightBorder?: boolean; //1 dark, 0 default
+    video?: boolean;
 }
 export default function ImageNText(props: ImageNTextProps){
     return (
@@ -13,7 +14,14 @@ export default function ImageNText(props: ImageNTextProps){
                 props.right ? 
             <>
                 <div className="projectImageNText-Item">
+                {
+                    props.video ? 
+                    <video className="projectImageNText-wrapper" width={575} height={323} autoPlay controls loop preload="none">
+                        <source src={props.img} type="video/mp4"/>
+                    </video>
+                    :
                     <Image className="projectImageNText-wrapper"  src={props.img} height={300} width={300} alt="concepts"/>
+                }
                 </div>
                 <div className="projectImageNText-content projectImageNText-Item project-p">
                     <p>{props.text}</p>
@@ -26,7 +34,14 @@ export default function ImageNText(props: ImageNTextProps){
                     <p>{props.text}</p>
                     <p>{props.second_text}</p>
                 </div>
-                <Image className="projectImageNText-wrapper"  src={props.img} height={300} width={300} alt="concepts"/>
+                {
+                    props.video ? 
+                    <video className="projectImageNText-wrapper" width={575} height={323} loop controls autoPlay preload="none">
+                        <source src={props.img} type="video/mp4"/>
+                    </video>
+                    :
+                    <Image className="projectImageNText-wrapper"  src={props.img} height={300} width={300} alt="concepts"/>
+                }
             </>
             }
         </div>

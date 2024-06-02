@@ -891,7 +891,7 @@ select {
     flex-grow: 1;
   }
   .project-image {
-    height: 10rem;
+    height: 15rem;
     width: auto;
   }
   .projectImageNText-Item {

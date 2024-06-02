@@ -18,8 +18,8 @@ const About: NextPage = () => {
                   <h2>
                     Nicholas Dimidik <span>Computer Engineer</span>
                   </h2>
-                  <p>
-                    Computer engineer passionate in content creation, hardware design, and artifical intelligence. 
+                  <p className="">
+                    Computer engineer with a focus on software development. Passionate in artifical intelligence, hardware design and content creation.
                     Professionally started as a Full-Stack web developer quickly moving into Silicon Validation and now enjoying creating everything AI. 
                     Currently working on U-Fi, a personal finance assistant & dashboard with a good friend from Microsoft.
                     <br/><br/>
@@ -87,8 +87,8 @@ const About: NextPage = () => {
                     <div className="skill-item padd-15">
                       <h5>Full-Stack</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "80%" }} />
-                        <div className="skill-percent">80%</div>
+                        <div className="progress-in" style={{ width: "95%" }} />
+                        <div className="skill-percent">95%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
@@ -99,7 +99,7 @@ const About: NextPage = () => {
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>System Architechture</h5>
+                      <h5>Data Structures</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "80%" }} />
                         <div className="skill-percent">80%</div>
@@ -108,8 +108,8 @@ const About: NextPage = () => {
                     <div className="skill-item padd-15">
                       <h5>Electrical</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "50%" }} />
-                        <div className="skill-percent">50%</div>
+                        <div className="progress-in" style={{ width: "60%" }} />
+                        <div className="skill-percent">60%</div>
                       </div>
                     </div>
                   </div>

@@ -19,11 +19,10 @@ const About: NextPage = () => {
                     Nicholas Dimidik <span>Computer Engineer</span>
                   </h2>
                   <p className="">
-                    Computer engineer with a focus on software development. Passionate in artifical intelligence, hardware design and content creation.
-                    Professionally started as a Full-Stack web developer quickly moving into Silicon Validation and now enjoying creating everything AI. 
-                    Currently working on U-Fi, a personal finance assistant & dashboard with a good friend from Microsoft.
-                    <br/><br/>
-                    Hobbies include working building a  <b className="full-text">FULL</b>-stack AI suite with a custom tensor core FPGA, remote camera system, backend service, hand-built neural net (in rust) and web interface.  
+                    Computer engineer with a focus on software development full-stack web and low level applications. Interest in AI accelerated hardware design.
+                    Currently working on UFi, a personal finance manager using LLama3.
+                    <br/> <br/>
+                    Hobbies include developing video pattern recognition, FPGA design, low-level programming and electrical engineering. 
                   </p>
                 </div>
               </div>
@@ -64,9 +63,10 @@ const About: NextPage = () => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="/assets/docs/resume.pdf"
+                        href="/docs/Resume-NicholasDimidik.pdf"
                         target="_target"
                         className="btn"
+                        download
                       >
                         Download CV
                       </a>

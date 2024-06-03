@@ -20,7 +20,7 @@ export default async function Home() {
               className="shadow-dark"
             />
             <h1>Nicholas Dimidik</h1>
-            <p>The <b className="full-text ">FULL</b> Stack Developer</p>
+            <p><b className="full-text ">FULL</b> Stack Developer</p>
             <div className="social-links">
               {/* <a href="https://twitter.com/" target="_blank">
                 <i className="fa fa-twitter" />

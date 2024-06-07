@@ -6,14 +6,14 @@ export default function ProjSocialStatus(){
         <>
         <div className="row">
             <div className="section-title padd-15">
-                <h2>Social Status</h2>
+                <h2>Social Status - Infra and Hardware</h2>
             </div>
         </div>
         <div className="row">
             <div className="about-content padd-15">
                 <div className="project-image-banner">
                     <Image className="project-image" style={{marginBottom: '15px'}} src="/imgs/portfolio/SocialStatus/nice.jpg" height={300} width={300} alt="studio"/>
-                    <Image className="project-image" style={{marginBottom: '15px'}} src="/imgs/portfolio/SocialStatus/closeupCropped2.png" height={300} width={300} alt="selfie"/>
+                    <Image className="project-image" style={{marginBottom: '15px'}} src="/imgs/portfolio/SocialStatus/SocialStatus.png" height={300} width={300} alt="selfie"/>
                     <Image className="project-image" style={{marginBottom: '15px'}} src="/imgs/portfolio/SocialStatus/picam.png" height={300} width={300} alt="picam v2"/>
                 </div>
                 <div className="row">
@@ -61,11 +61,12 @@ export default function ProjSocialStatus(){
                     </div>
                    
                     <div className="about-text padd-15" style={{width: "100%", marginBottom: "1rem"}}>
-                        <h3>Hardware</h3>
-                        <p>
+                        <h3 className="project-header text">Hardware</h3>
+                        <p className="project-p">
                             Originally opting to use a <b>Pi-Pico W</b> with a <b>SPI Camera</b> due to budget constraints and *theoretically acceptable performance for uploading images. This idea was quickly scrapped after running into many issues with the SPI interface and the manufacturer&apos;s recommended interpretation of the output bytes did not translate into a valid JPG image.
                             <br/><br/>
                             Due to this and my focus on the AI aspect of the project I&apos;d opted to use the recently released <b>Raspberry Pi 5</b> joined with a <b>Raspberry Pi-Cam V2</b>.
+                            The hardware was designed to work together and the documentation provided by Raspberry Pi Co. and the vast community was phenominal, making for a quick spin-up time for the video stream.  
                         </p>
                     </div>
                     <div className="project-tech-banner" style={{marginBottom: '15px'}}>
@@ -89,22 +90,20 @@ export default function ProjSocialStatus(){
                         video={true}
                         img="/imgs/portfolio/SocialStatus/video.mp4"
                         />
-                        <p className="" style={{marginBottom: '15px'}}>
+                        <p className="project-p" style={{marginBottom: '15px'}}>
                             The isolation of responsiblities worked really in keeping things <b>FAST</b>, getting up to 60fps on the end client just via unbatched HTTP POST requests alone. 
                             This also prevented catostophic failure if the camera host or server went down, as the server and Pi were not dependent on one another and would restart as soon as the other came back online.
                         </p>
                     </div>
-                    <div className="about-text padd-15" style={{width: "100%", marginBottom: "1rem"}}>
-                        <h3>Training</h3>
-                        <p>
+                    {/* <div className="about-text padd-15" style={{width: "100%", marginBottom: "1rem"}}>
+                        <h3 className="text">Training</h3>
+                        <p className="project-p">
                             By far my favorite part of the process, training proved to be the hardest & most rewarding aspect of this project, even still in my free time there&apos;s an ongoing effort to perfect the model.   
                         </p>
-                        <p>
-                            Originally opting to use a <b>Pi-Pico W</b> with a <b>SPI Camera</b> due to budget constraints and *theoretically acceptable performance for uploading images. This idea was quickly scrapped after running into many issues with the SPI interface and the manufacturer&apos;s recommended interpretation of the output bytes did not translate into a valid JPG image.
-                            <br/><br/>
-                            Due to this and my focus on the AI aspect of the project I&apos;d opted to use the recently released <b>Raspberry Pi 5</b> joined with a <b>Raspberry Pi-Cam V2</b>.
+                        <p className="project-p">
+
                         </p>
-                    </div>
+                    </div> */}
                     <div className="about-text padd-15" style={{width: '100%'}}>
                         {/* <h3 className="project-header text" style={{marginBottom: '15px'}}>What was <span className="project-subheader">really built</span> and Conclusion</h3> */}
                         {/* <p className="project-p">

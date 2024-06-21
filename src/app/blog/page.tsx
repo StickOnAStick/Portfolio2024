@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import BlogItem from "./blogitem";
 
 const Blog: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Blog: NextPage = () => {
           </div>
           <div className="row">
             {/* Blog Item 1 */}
+            <BlogItem title="Blog Update" img={{src: "/imgs/blog/1.jpg", alt: "Responsive web design"}} date="Jun 19th, 2024" path="update" para="Changin' the way things done round here." tags={["JSX", "Update", "Social"]}/>
             <div className="blog-item padd-15">
               <div className="blog-item-inner shadow-dark">
                 <div className="blog-img">
